@@ -18,14 +18,13 @@
 		<iframe src="http://www.facebook.com/plugins/like.php?href=http://wherethefuckarethereleasenotes.com&amp;layout=button_count&amp;show_faces=true&amp;width=80&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true"></iframe>
 		<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://wherethefuckarethereleasenotes.com/" data-via="AndrewSmallbone">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     </header>
-
 	<div class="description">
-         <h1>Where the fuck are the release notes?</h1>
+         <div id="title"><a href="http://wherethefuckarethereleasenotes.com/">Where the fuck are the release notes?</a></div>
 		Doing a release but can't remember what to put in the release notes?<br/>
         <del>Can't be bothered</del> don't have time to filter the embarrasing stuff out of the commit logs?<br/>
         Here's some we prepared earlier (<a href="http://wherethefuckarethereleasenotes.com/">reload</a> for more).
 	</div>
-    <div class="replaceme">
+    <div class="replaceme releasenotes">
         <h2>What's New in this Version</h2>
         <p>- {{note}}</p>
         <p>- {{note}}</p>
@@ -62,12 +61,13 @@
         ]
     };
     replace_all_withclass("replaceme", release_notes);
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-8238936-5', 'wherethefuckarethereleasenotes.com');
-    ga('send', 'pageview');
-</script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-8238936-5', 'wherethefuckarethereleasenotes.com');
+	ga('send', 'pageview');
+	</script>
 </body>
 
 </html>
