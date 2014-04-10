@@ -1,7 +1,7 @@
 wherethefuckarethereleasenotes
 ==============================
 
-See wherethefuckarethereleasenotes.com
+See http://wherethefuckarethereleasenotes.com/
 
 View source for details: div with class "replaceme" and script tag in index.html
 
